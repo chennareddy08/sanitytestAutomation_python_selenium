@@ -3,7 +3,7 @@ import unittest
 import HTMLTestRunner
 import os
 from user_signup_login import TestAccount
-from d import BookHandstand
+from bookingsession import BookHandstand
 dir = os.getcwd()
 tests1 = unittest.TestLoader().loadTestsFromTestCase(TestAccount)
 tests2 = unittest.TestLoader().loadTestsFromTestCase(BookHandstand)
