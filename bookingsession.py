@@ -33,9 +33,12 @@ class BookHandstand(BaseTestCase):
             target.booking_button().click()
 
         #target.validate_startbookingPage()
+        target.startBookingButton().is_displayed()
         target.startBookingButton().click()
         #target.validate_datepage()
+        target.currentdate().is_displayed()
         target.currentdate().click()
+        .is_displayed()
         target.currenttime().click()
         #target.location_verifypage()
         target.location_entry('11200')
