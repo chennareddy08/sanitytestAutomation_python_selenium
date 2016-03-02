@@ -47,7 +47,7 @@ class BookHandstand(BaseTestCase):
         BP.login_link().is_displayed()
         BP.login_link().click()
         BP.login_account('testhandapp1@gmail.com','123456')
-        BP.login_successfull()
+        #BP.login_successfull()
         self.driver.implicitly_wait(20)
         self.driver.save_screenshot("booked1.png")
         #target.verify_sessionbooked_confirmation()
@@ -59,59 +59,9 @@ class BookHandstand(BaseTestCase):
             print("booking failed due to card was declined)")
 
 
-    # def test_login_booking(self):
-    #     """
-    #      Test case to verify login account first and after booking the session
-    #      """
-    #     target=booking_functions.Booking(self.driver)
-    #     BP=booking_functions.BasePage(self.driver)
-    #     BP.signup_link().click()
-    #     BP.login_link().click()
-    #     BP.login_account(self,'handstandtest3@gmail.com','123456')
-    #     BP.login_successfull()
-    #     self.driver.implicitly_wait(15)
-    #     target.zipcode_entry('90405')
-    #     self.driver.implicitly_wait(10)
-    #
-    #     self.driver.find_element_by_css_selector("[name='search']").send_keys("Handstand's Choice")
-    #     self.driver.find_element_by_css_selector(".search.search-icon").click()
-    #     target.Book_button_trainers().click()
-    #     self.driver.implicitly_wait(10)
-    #     target.startBookingButton().click()
-    #     target.validate_datepage()
-    #     target.currentdate().click()
-    #     target.currenttime().click()
-    #     target.location_verifypage()
-    #     target.location_entry('11378')
-    #     target.verify_classtypepage()
-    #     target.classtype_select()
-    #     self.driver.implicitly_wait(5)
-    #     target.verify_reviewpage()
-    #     target.click_book_nowbutton().click()
-    #     self.driver.implicitly_wait(10)
-    #     target.verify_sessionbooked_confirmation()
-    #     target.click_done_sessionconfirmation().click()
-    #     self.driver.save_screenshot("booked2.png")
-    #     self.driver.implicitly_wait(10)
-    #     target.HomeTab().click()
-    #     self.driver.implicitly_wait(10)
-    #     target.zipcode_entry('90405')
-    #     target.profileimage().click()
-    #     target.profiletab().click()
-    #     target.workouttab().click()
-    #     self.driver.implicitly_wait(5)
-    #     target.cancel_bookingbutton().click()
-    #     target.verify_cancelworkoutpage_confirmation()
-    #     target.cancel_Nevermindbutton().click()
-    #
-    #     self.driver.implicitly_wait(10)
-    #     target.cancel_bookingbutton().click()
-    #     target.cancel_workoutbutton().click()
-    #     target.cancel_Nevermindbutton().click()
-    #     target.cancel_bookingbutton().click()
-    #     target.cancel_workoutbutton().click()
-    #     target.verify_workoutblocked_popup()
-    #     target.cancel_workoutbutton().click()
+  
+   
+  
 
 
     def cancel_bookings(self):
