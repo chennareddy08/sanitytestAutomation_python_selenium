@@ -61,11 +61,13 @@ class BookHandstand(BaseTestCase):
             print("Booking session is successfull")
         except:
             print("booking failed due to card was declined)")
+    
+    
     def cancel_bookings(self):
         """
          Test case to verify Cancel the Booked the session  
         """
-        self.driver.set_window_size(1250,1024)
+   
         target=booking_functions.Booking(self.driver)
         BP=base_function.BasePage(self.driver)
         BP.signup_link().is_displayed()
@@ -75,9 +77,7 @@ class BookHandstand(BaseTestCase):
         BP.login_account('handstandtest4@gmail.com','123456')
         BP.login_successfull()
         self.driver.implicitly_wait(20)
-
         target.zipcode_entry('90405')
-
         try:
             while target.profileimage().is_displayed():
                 target.profileimage().click()
