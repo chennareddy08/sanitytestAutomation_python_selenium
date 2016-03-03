@@ -61,16 +61,9 @@ class BookHandstand(BaseTestCase):
             print("Booking session is successfull")
         except:
             print("booking failed due to card was declined)")
-
-
-  
-   
-  
-
-
     def cancel_bookings(self):
         """
-         Test case to verify Booking the session  first and login
+         Test case to verify Cancel the Booked the session  
         """
         self.driver.set_window_size(1250,1024)
         target=booking_functions.Booking(self.driver)
