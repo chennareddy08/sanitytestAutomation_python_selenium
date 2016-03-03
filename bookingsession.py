@@ -50,7 +50,7 @@ class BookHandstand(BaseTestCase):
         target.click_book_nowbutton().click()
         BP.login_link().is_displayed()
         BP.login_link().click()
-        BP.login_account('testhandapp1@gmail.com','123456')
+        BP.login_account('Testcreditcard@gmail.com','123456')
         #BP.login_successfull()
         self.driver.implicitly_wait(20)
         self.driver.save_screenshot("booked1.png")
