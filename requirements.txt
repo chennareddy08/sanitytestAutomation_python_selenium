@@ -1,5 +1,5 @@
 Appium-Python-Client==0.21
-IOS SDK==9.2
+IOS==9.0
 appium==1.4.13
 node==v5.6.0
 selenium==2.52.0
