@@ -17,7 +17,7 @@ class iosbooking(unittest.TestCase):
              #'app': app,
              'autoAcceptAlerts':'true',
             'platformName': 'iOS',
-            'platformVersion': '9.0',
+            'platformVersion': '9.2',
              'deviceName': 'iPhone 6s' })
 
     def booking_ios(self):
