@@ -28,7 +28,7 @@ class iosbooking(unittest.TestCase):
         self.driver.find_element_by_class_name("UIASecureTextField").send_keys('123456')
         self.driver.find_element_by_xpath("//UIAApplication[1]/UIAWindow[1]/UIAButton[3]").click()
         time.sleep(10)
-        #driver.find_element_by_name("OK").click()
+        self.driver.find_element_by_name("OK").click()
         self.driver.find_element_by_name("Where do you want to workout?").click()
         try:
             self.driver.find_element_by_name("Allow").click()
