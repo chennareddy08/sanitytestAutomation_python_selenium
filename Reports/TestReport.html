@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
+    <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Selenium Test Report</title>
-    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <title>Handstand Web Automation Test Report</title>
+    <meta name="generator" content="HTMLTestRunner 1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
 <style type="text/css" media="screen">
@@ -179,21 +180,24 @@ function showOutput(id, name) {
     d = w.document;
     d.write("<pre>");
     d.write(html_escape(output_list[id]));
-    d.write("\n");
-    d.write("<a href='javascript:window.close()'>close</a>\n");
-    d.write("</pre>\n");
+    d.write("
+");
+    d.write("<a href='javascript:window.close()'>close</a>
+");
+    d.write("</pre>
+");
     d.close();
 }
 */
 --></script>
 
 <div class='heading'>
-<h1>Selenium Test Report</h1>
-<p class='attribute'><strong>Start Time:</strong> 2016-01-12 18:12:49</p>
-<p class='attribute'><strong>Duration:</strong> 0:04:43.212823</p>
-<p class='attribute'><strong>Status:</strong> Pass 6</p>
+<h1>Handstand Web Automation Test Report</h1>
+<p class='attribute'><strong>Start Time:</strong> 2017-02-27 19:39:13</p>
+<p class='attribute'><strong>Duration:</strong> 0:04:42.454416</p>
+<p class='attribute'><strong>Status:</strong> Pass 8</p>
 
-<p class='description'>Testing Tomcat Web Project 1</p>
+<p class='description'>Test Automation Report</p>
 </div>
 
 
@@ -222,12 +226,12 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='passClass'>
-    <td>script.user_signup_login.TestAccount</td>
-    <td>5</td>
-    <td>5</td>
+    <td>user_signup_login.TestAccount</td>
+    <td>8</td>
+    <td>8</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',5)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',8)">Detail</a></td>
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
@@ -245,7 +249,7 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-pt1.1: Navigation between sign in and create account page
+pt1.1: Navigation between sign in and create account page is successful.
 
 
         </pre>
@@ -256,7 +260,7 @@ pt1.1: Navigation between sign in and create account page
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_madatoryfield</div></td>
+    <td class='none'><div class='testcase'>test_createAccount_madatoryfield</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -270,12 +274,14 @@ pt1.1: Navigation between sign in and create account page
         </div>
         <pre>
         
-pt1.2: Invalid email format
-Password cannot be blank.
-Mobile must be valid.
-First name cannot be blank.
-Last name cannot be blank.
-Please provide a valid mobile number
+pt1.2: Navigation between sign in and create account page is successful.
+The first name field is required.
+The last name field is required.
+The email field is required.
+The email has already been taken.
+The password field is required.
+The password must be at least 8 characters.
+The password confirmation does not match.
 
 
         </pre>
@@ -286,7 +292,7 @@ Please provide a valid mobile number
 </tr>
 
 <tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_newuser</div></td>
+    <td class='none'><div class='testcase'>test_login_madatoryfield</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -300,7 +306,17 @@ Please provide a valid mobile number
         </div>
         <pre>
         
-pt1.3: Creating new usr
+pt1.3: Navigation between sign in and create account page is successful.
+The first name field is required.
+The last name field is required.
+The email field is required.
+The email has already been taken.
+The password field is required.
+The password must be at least 8 characters.
+The password confirmation does not match.
+The email field is required.
+The password field is required.
+Incorrect email or password
 
 
         </pre>
@@ -311,7 +327,7 @@ pt1.3: Creating new usr
 </tr>
 
 <tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_user</div></td>
+    <td class='none'><div class='testcase'>test_madatoryField_confirmResetPassword</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -325,7 +341,20 @@ pt1.3: Creating new usr
         </div>
         <pre>
         
-pt1.4: email already exest so login to user account
+pt1.4: Navigation between sign in and create account page is successful.
+The first name field is required.
+The last name field is required.
+The email field is required.
+The email has already been taken.
+The password field is required.
+The password must be at least 8 characters.
+The password confirmation does not match.
+The email field is required.
+The password field is required.
+Incorrect email or password
+The email field is required.
+The selected email is invalid.
+Sorry , the reset code has expired. Please submit a new request.
 
 
         </pre>
@@ -336,7 +365,7 @@ pt1.4: email already exest so login to user account
 </tr>
 
 <tr id='pt1.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_verifyForgotPasswordOption</div></td>
+    <td class='none'><div class='testcase'>test_mandatoryField_resetPassword</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -350,8 +379,22 @@ pt1.4: email already exest so login to user account
         </div>
         <pre>
         
-pt1.5: 
-Handstand
+pt1.5: Navigation between sign in and create account page is successful.
+The first name field is required.
+The last name field is required.
+The email field is required.
+The email has already been taken.
+The password field is required.
+The password must be at least 8 characters.
+The password confirmation does not match.
+The email field is required.
+The password field is required.
+Incorrect email or password
+The email field is required.
+The selected email is invalid.
+Sorry , the reset code has expired. Please submit a new request.
+The email field is required.
+The selected email is invalid.
 
 
         </pre>
@@ -361,31 +404,128 @@ Handstand
     </td>
 </tr>
 
-<tr class='passClass'>
-    <td>script.dummy.TestAccounta</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
-</tr>
-
-<tr id='pt2.1' class='hiddenRow'>
+<tr id='pt1.6' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_newuser</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
         pass</a>
 
-    <div id='div_pt2.1' class="popup_window">
+    <div id='div_pt1.6' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.6').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.1: Creating new usr
+pt1.6: Navigation between sign in and create account page is successful.
+The first name field is required.
+The last name field is required.
+The email field is required.
+The email has already been taken.
+The password field is required.
+The password must be at least 8 characters.
+The password confirmation does not match.
+The email field is required.
+The password field is required.
+Incorrect email or password
+The email field is required.
+The selected email is invalid.
+Sorry , the reset code has expired. Please submit a new request.
+The email field is required.
+The selected email is invalid.
+Creating new user
+account creation is successful
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_user_createAccount</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        pass</a>
+
+    <div id='div_pt1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.7: Navigation between sign in and create account page is successful.
+The first name field is required.
+The last name field is required.
+The email field is required.
+The email has already been taken.
+The password field is required.
+The password must be at least 8 characters.
+The password confirmation does not match.
+The email field is required.
+The password field is required.
+Incorrect email or password
+The email field is required.
+The selected email is invalid.
+Sorry , the reset code has expired. Please submit a new request.
+The email field is required.
+The selected email is invalid.
+Creating new user
+account creation is successful
+The email has already been taken.
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_verifyForgotPasswordOption</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
+        pass</a>
+
+    <div id='div_pt1.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.8: Navigation between sign in and create account page is successful.
+The first name field is required.
+The last name field is required.
+The email field is required.
+The email has already been taken.
+The password field is required.
+The password must be at least 8 characters.
+The password confirmation does not match.
+The email field is required.
+The password field is required.
+Incorrect email or password
+The email field is required.
+The selected email is invalid.
+Sorry , the reset code has expired. Please submit a new request.
+The email field is required.
+The selected email is invalid.
+Creating new user
+account creation is successful
+The email has already been taken.
+Send Password Reset Link
+Thanks for  the request !   You will receive an email with instructions on how to reset your password.
+Handstand | Fitness Experts and Trainers on Demand
 
 
         </pre>
@@ -397,8 +537,8 @@ pt2.1: Creating new usr
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>6</td>
-    <td>6</td>
+    <td>8</td>
+    <td>8</td>
     <td>0</td>
     <td>0</td>
     <td>&nbsp;</td>

@@ -1,15 +1,15 @@
 __author__ = 'Chennareddy'
 import unittest
-import HTMLTestRunner
+from . import HTMLTestRunner
 import os
-from user_signup_login import TestAccount
-from bookingsession import BookHandstand
+from .test1 import TestA
+from .test2 import TestB
 dir = os.getcwd()
-tests1 = unittest.TestLoader().loadTestsFromTestCase(TestAccount)
-tests2 = unittest.TestLoader().loadTestsFromTestCase(BookHandstand)
+tests1 = unittest.TestLoader().loadTestsFromTestCase(TestA)
+tests2 = unittest.TestLoader().loadTestsFromTestCase(TestB)
 all_tests = unittest.TestSuite([tests1,tests2])
 
-outfile = open(dir+"/TestReport.html", "w")
+outfile = open(dir+"/Reports/TestReport.html", "w")
 runner = HTMLTestRunner.HTMLTestRunner(stream=outfile,
                                        verbosity=1,
                                        title="Selenium Test Report",
